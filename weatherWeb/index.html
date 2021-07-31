@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Web</title>
+    <meta name="description" content="Weather Web.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/simplex/bootstrap.min.css">
+</head>
+
+<body>
+<br>
+
+<h1>Weather Web</h1>
+<br>
+
+
+
+<div class="div-select">
+<label for="Cities">
+<h4>מידע על מזג אוויר לפי מיקום</h4>
+</label> <br> <br>
+<select name="Cities" id="Cities" onchange="get_data(this)">
+    <option value="" disabled selected>בחר עיר</option>
+    <option value="Jerusalem">ירושלים</option>
+    <option value="Haifa">חיפה</option>
+    <option value="Tel Aviv">תל אביב</option>
+    <option value="Carmiel">כרמיאל</option>
+    <option value="Tiberias">טבריה</option>
+    <option value="Qiryat Shemona">קריית שמונה</option>
+    <option value="Rishon LeẔiyyon">ראשון לציון</option>
+    <option value="Petah Tikva">פתח תקווה</option>
+    <option value="Nahariyya">נהריה</option>
+    <option value="Acre">עכו</option>
+    <option value="Beer Sheva">באר שבע</option>
+    <option value="Holon">חולון</option>
+    <option value="Bat Yam">בת ים</option>
+
+
+
+
+</select>
+</div>
+
+<br>
+<div class="weather-container" >
+    <img id="icon"> <br> <br>
+    <h5 id="weather"></h5>
+    <h5 id="temp"></h5>
+</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
