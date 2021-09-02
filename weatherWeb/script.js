@@ -13,7 +13,7 @@ function get_data(city) {
     document.getElementById("icon").setAttribute("width", 60);
     document.getElementById("icon").setAttribute("height", 60);
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://api.openweathermap.org/data/2.5/weather?q=" + city.value + "&units=metric&appid=ce3f51ed33b5e660ec79136c46f5dcdb", true);
+    xhr.open('GET', "https://api.openweathermap.org/data/2.5/weather?q=" + city.value + #KEY, true);
     xhr.send();
     xhr.onload = function () {
         let Text_data = xhr.responseText;
